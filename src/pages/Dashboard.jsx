@@ -3,6 +3,7 @@ import { CheckCircle, Clock, AlertTriangle, Users, Folder } from "lucide-react";
 import RevenueChart from "../components/RevenueChart";
 import BudgetPieChart from "../components/BudgetPieChart";
 import TeamMood from "../components/TeamMood";
+import BudgetStatus from "../components/BudgetStatus";
 
 const Dashboard = () => {
   const stats = [
@@ -45,6 +46,10 @@ const Dashboard = () => {
           <BudgetPieChart />
         </div>
         <TeamMood />
+      </div>
+
+      <div className="w-full">
+        <BudgetStatus />
       </div>
     </div>
   );
