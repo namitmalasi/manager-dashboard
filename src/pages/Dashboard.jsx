@@ -1,6 +1,7 @@
 import StatsCard from "../components/StatsCard";
 import { CheckCircle, Clock, AlertTriangle, Users, Folder } from "lucide-react";
 import RevenueChart from "../components/RevenueChart";
+import BudgetPieChart from "../components/BudgetPieChart";
 
 const Dashboard = () => {
   const stats = [
@@ -37,8 +38,9 @@ const Dashboard = () => {
         ))}
       </div>
 
-      <div className="w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <RevenueChart />
+        <BudgetPieChart />
       </div>
     </div>
   );
