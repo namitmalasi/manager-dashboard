@@ -2,6 +2,7 @@ import StatsCard from "../components/StatsCard";
 import { CheckCircle, Clock, AlertTriangle, Users, Folder } from "lucide-react";
 import RevenueChart from "../components/RevenueChart";
 import BudgetPieChart from "../components/BudgetPieChart";
+import TeamMood from "../components/TeamMood";
 
 const Dashboard = () => {
   const stats = [
@@ -38,9 +39,12 @@ const Dashboard = () => {
         ))}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <RevenueChart />
-        <BudgetPieChart />
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <RevenueChart />
+          <BudgetPieChart />
+        </div>
+        <TeamMood />
       </div>
     </div>
   );
