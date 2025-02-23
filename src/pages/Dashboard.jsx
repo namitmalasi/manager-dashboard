@@ -1,5 +1,6 @@
 import StatsCard from "../components/StatsCard";
 import { CheckCircle, Clock, AlertTriangle, Users, Folder } from "lucide-react";
+import RevenueChart from "../components/RevenueChart";
 
 const Dashboard = () => {
   const stats = [
@@ -35,9 +36,12 @@ const Dashboard = () => {
           <StatsCard key={stat.title} {...stat} />
         ))}
       </div>
+
+      <div className="w-full">
+        <RevenueChart />
+      </div>
     </div>
   );
 };
 
 export default Dashboard;
-  
